@@ -10,7 +10,7 @@
 ```
 {
 	"user_pk": 2,
-	"user_secret_key": "fffff..."(len 25),
+	"user_secret_key": "fffff...",
 	"session_pks": [10, ...]
 }
 ```
@@ -18,7 +18,7 @@
 ### Response
 `gun_type` maps (0: pistol), (1: rifle)  
 `fire_type` maps (1: live), (2: dry), (3: co2)  
-`date' takes "2016-12-31-11-59-59" or "2016-12-31-11-59-59". Use seconds to avoid duplicates
+`date` takes "2016-12-31-11-59-59" or "2016-12-31-11-59-59". Use seconds to avoid duplicates
 `gun.make`, `gun.model`, `gun.caliber` take empty strings if no gun selected.
 ```
 {
