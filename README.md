@@ -1,6 +1,11 @@
-### /get-session
+# Mantis Web API
 
-# Request
+- [mantisx.us-east-1.elasticbeanstalk.com/mantisx]Mantis
+- Use POST
+
+## /get-session
+
+### Request
 ```
 {
 	"user_pk": 2,
@@ -9,7 +14,7 @@
 }
 ```
 
-# Response
+### Response
 ```
 {
 	"sessions": [{
@@ -36,40 +41,49 @@
 }
 ```
 
-## Welcome to GitHub Pages
+## /post-session
 
-You can use the [editor on GitHub](https://github.com/jarednielsen/mantisx-docs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Request
+```
+{
+	"secret_key": "mantis<3bookoo",
+	"user_pk": 2,
+	"user_secret_key": "fffff...",
+	"session_count": 30,
+	"sessions": [{
+		"average_score": 60.4323,
+		"problem": "",
+		"handedness": "right",
+		"date": "2016-07-15-13-04" OR "2016-07-15-13-04-59",
+		"fire_type": 1, (1->live, 2->dry, 3->co2)
+		"gun_type": 0, (0->pistol, 1->rifle)
+		"firearm": {
+			"make": "glock",
+			"model": "19",
+			"caliber": "9mm"
+		},
+		"shots": [{
+			"angle": 243.3434,
+			"score": 60.4323,
+			"problem": "BREAKING WRIST DOWN",
+			"split": 0,
+			"pitch": [...],
+			"trigger_hold": 1.294893,
+			"handedness": "right",
+			"trigger_pull": 0.49837,
+			"bullseye": false,
+			"yaw": [...]
+		}]
+	}, {...
+	}]
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jarednielsen/mantisx-docs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Response
+```
+{
+	'success': 'true', 
+	'session_count': 30, 
+	'session_pks': [3, ...]
+}
+```
