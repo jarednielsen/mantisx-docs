@@ -1,3 +1,41 @@
+### /get-session
+
+# Request
+```
+{
+	"user_pk": 2,
+	"user_secret_key": "fffff..."(len 25),
+	"session_pks": [10, ...]
+}
+```
+
+# Response
+```
+{
+	"sessions": [{
+		"user_pk": 2,
+		"session_pk": 10,
+		"average_score": 60.4323,
+		"problem": "",
+		"handedness": "right",
+		"date": "2016-07-15-13-04",
+		"fire_type": 2,
+		"shots": [{
+			"angle": 243.3434,
+			"score": 60.4323,
+			"problem": "BREAKING WRIST DOWN",
+			"split": 0,
+			"pitch": [...],
+			"trigger_hold": 1.294893,
+			"handedness": "right",
+			"trigger_pull": 0.49837,
+			"yaw": [...]
+		}],
+	}, {...
+	}]
+}
+```
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/jarednielsen/mantisx-docs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
