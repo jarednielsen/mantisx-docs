@@ -1,6 +1,7 @@
 # Mantis Web API
 
-- [Mantis](http://mantisx.us-east-1.elasticbeanstalk.com/mantisx)
+- [Mantis](http://train.mantisx.com)
+- Base URL `http://train.mantisx.com`
 - Use POST
 
 ## /get-session
