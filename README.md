@@ -58,6 +58,29 @@
 }
 ```
 
+## /get-session-summaries
+
+### Request
+```
+{
+	"user_pk": 2,
+	"user_secret_key": "fffff...",
+}
+```
+
+### Response
+```
+{
+	"sessions": [{
+		"average_score": 90,
+		"date": "2016-07-15-13-04-59",
+		"id": 123,
+		"stamp": "7b7aaed4-6afb-4428-a532-0cf3fd0e67cc"
+	}, {...
+	}]
+}
+```
+
 ## /post-session
 
 ### Request
