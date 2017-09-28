@@ -8,35 +8,35 @@ If admin include information on pending member requests to join.
 
 ## /search-groups
 
-`user_pk`: "foo",
-`user_secret_key`: "",
+`user_pk`: "foo",  
+`user_secret_key`: "",  
 `search_term`: "mantis"
 
 ## /create-group
 
-`user_pk`: "foo",
-`user_secret_key`: "fff..."
-`name`: "mantis_group",
-`privacy`: "open" / "closed"
+`user_pk`: "foo",  
+`user_secret_key`: "fff..."  
+`name`: "mantis_group",  
+`privacy`: "open" / "closed"  
 
 ## /join-group, /leave-group, /delete-group
 
-`user_pk`: 123,
-`user_secret_key`: "fff...",
-`group_pk`: 45
+`user_pk`: 123,  
+`user_secret_key`: "fff...",  
+`group_pk`: 45  
 
 ## /edit-group
 
-`user_pk`: 123,
-`user_secret_key`: "fff...",
-`privacy`: "open" / "closed",
-`visibility`: "visible" / "hidden"
+`user_pk`: 123,  
+`user_secret_key`: "fff...",  
+`privacy`: "open" / "closed",  
+`visibility`: "visible" / "hidden"  
 
 ## /add-to-group, /delete-from-group
 
-`user_pk`: 123,
-`user_secret_key`: "fff...",
-`group_pk`: 45,
-`admin`: true / false, (make this new group member an admin?)
+`user_pk`: 123,  
+`user_secret_key`: "fff...",  
+`group_pk`: 45,  
+`admin`: true / false, (make this new group member an admin?)  
 `user_to_add_pk` / `user_to_delete_pk`: 234   
    
