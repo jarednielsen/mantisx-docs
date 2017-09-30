@@ -46,7 +46,8 @@ Group -
 `user_pk`: 123,  
 `user_secret_key`: "fff...",  
 `privacy`: "open" / "closed",  
-`visibility`: "visible" / "hidden"  
+`visibility`: "visible" / "hidden",  
+`name`: "new_name"
 
 ## /add-to-group, /delete-from-group
 
