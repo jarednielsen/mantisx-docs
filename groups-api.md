@@ -2,10 +2,6 @@
 
 ## /get-groups
 
-Get groups I am in, and stats for each member including how many shots in the last 7 days and best score on the benchmark drill. 
-If benchmark drill is unavailable, then best open training session with >=10 shots, else None. 
-If admin include information on pending member requests to join.
-
 `user_pk`: "foo",  
 `user_secret_key`: ""  
 
@@ -16,10 +12,12 @@ Group -
 `name`: the name of the group  
 `latest_sessions`: an array of the last five sessions  
 `best_sessions`: an array of the best sessions in the last 7 days  
-`members`: an array of users, each user contains summary stats  
+`members`: an array of users, each user contains summary stats (`weekly_shot_count`, `weekly_benchmark_score`)
+`admin`: true / false
+`pending_member_requests`: an array of dicts containing `id`, `username`. Only appears if user is admin.
 `settings`: a dict containing  
    `privacy`: "open" / "closed",  
-   `visibility`: "visible" / "hidden"  
+   `visibility`: "visible" / "hidden" 
 
 
 ## /search-groups
