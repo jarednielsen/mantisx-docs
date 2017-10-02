@@ -6,7 +6,7 @@ All of the following API calls require
 
 Additional parameters listed below.
 
-## /get-following
+## /get-following, /get-followers
 
 ## /get-follow-requests
 
