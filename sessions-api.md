@@ -8,6 +8,7 @@ All of the following API calls require
 Additional parameters listed below.
 
 ## /post-session
+```
 `phone_type` "ios" \ "android"  
 `device_info`: "iPhone 6"  
 `sessions`: [{
@@ -38,4 +39,4 @@ Additional parameters listed below.
     `pull_index`: (int)  
   }]
 }]
-  
+``` 
