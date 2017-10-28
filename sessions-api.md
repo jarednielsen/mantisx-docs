@@ -25,6 +25,7 @@ sessions: [{
   firearm: {
     make: (string)  
     model: (string)  
+    caliber: (string)  
   }  
   time_stamp: (int)
   stamp: (string)
