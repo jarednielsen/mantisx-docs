@@ -19,7 +19,7 @@ Group -
    `privacy`: "open" / "closed",  
    `visibility`: "visible" / "hidden" 
 
-## /get-public-groups
+## /public-groups
 Returns:
 `groups`: an array of all public groups  
 
