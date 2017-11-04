@@ -6,7 +6,7 @@
 `user_secret_key`: ""  
 
 Returns:  
-`groups`: an array of groups  
+`groups`: an array of groups the user belongs to  
 Group -  
 `pk`: the group id  
 `name`: the name of the group  
@@ -19,6 +19,9 @@ Group -
    `privacy`: "open" / "closed",  
    `visibility`: "visible" / "hidden" 
 
+## /get-public-groups
+Returns:
+`groups`: an array of all public groups  
 
 ## /search-groups
 
