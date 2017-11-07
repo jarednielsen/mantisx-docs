@@ -31,4 +31,16 @@ $.ajax({
 })
 ```
 
+## /update-address
+`ship_to_name`  
+`address`  
+`city`  
+`state`  
+`zip_code`  
+
+## /update-basic-training
+Pass in the basic training date as a float, epochs since 1970 in UTC time. (datetime.timestamp() in Python).
+If it is not set, pass `null`.
+`basic_training_challenge`: 3,  
+`basic_training_completed`: 1510064658.626689
 
