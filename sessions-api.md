@@ -61,3 +61,8 @@ For example, page=0 would return the 50 most recent sessions.
 
 ## /get-other-user-summary
 `requested_user_pk`: (int)
+
+## /get-other-user-profile 
+Returns similar data as `get-other-user-summary`, but with 25 sessions included.  
+This should be enough to populate the galaxy chart.  
+`requested_user_pk`: (int)  
